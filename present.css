@@ -1,0 +1,96 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+  *:focus {
+    outline: none;
+}
+body {
+    margin: auto;
+    min-width: 800px;
+}
+.col1, .col3 {
+    height: 800px;
+    width: 20%;
+    background-color: #FE0002;
+}
+.colbas {
+    width: 60%;
+}
+.col2 {
+    width: 60%;
+    height: 800px;
+    background-image: url(./images/maple-leaf-38777_960_720.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+main, footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    margin: auto;
+    width: 100%;
+    color: white;
+}
+.titr {
+    display: block;
+    position: relative;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    margin-top: 170px;
+    margin-bottom: 0px;
+}
+h1 {
+    width: 100%;
+    font-size: 60px;
+}
+h4 {
+    width: 100%;
+    margin-top: 0px;
+}
+.bt {
+    display: block;
+    position: relative;
+    top: 40%;
+    margin: auto;
+    width: 300px;
+    border: 2px solid red;
+    border-radius: 30px;
+    background-color: white;
+    text-align: center;
+}
+.bt:hover, .bt a:hover {
+    border-color: rebeccapurple;
+    color: rebeccapurple;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+.bt p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.bt a {
+    color: red;
+    font-size: 20px;
+    text-decoration: none;
+}
+footer {
+    text-align: center;
+    font-size: 8pt;
+    height: 30px;
+}
+.col1Bas, .col3Bas {
+    height: 30px;
+    width: 20%;
+    background-color: #FE0002;
+}
+.col2Bas {
+    color: red;
+    height: 30px;
+    width: 60%;
+}

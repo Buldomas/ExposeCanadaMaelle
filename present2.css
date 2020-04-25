@@ -1,0 +1,142 @@
+html {
+    box-sizing: border-box;
+    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+  *:focus {
+    outline: none;
+}
+body {
+    margin: auto;
+}
+/* Entête */
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+.col1Haut, .col3Haut {
+    height: 60px;
+    width: 20%;
+    background-color:#FFCCCC;
+}
+.col2Haut {
+    width: 60%;
+    height: 60px;
+}
+#erable:hover {
+    transform: scale(1.2) translate(5px, 5px);
+    transition: all 300ms ease;
+}
+.col2Haut h1 {
+    text-align: center;
+    font-size: 30pt;
+    margin: 5px;
+    color: red;
+}
+/* Corps main */
+main {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: top;
+}
+.col1, .col3 {
+    width: 20%;
+    min-height: 713px;
+    height: auto;
+    background-color:#FFCCCC;
+}
+.col2 {
+    width: 60%;
+    min-height: 713px;
+    height: auto;
+    background-image: url(./images/Fond1.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.enonce {
+    position: relative;
+    left: -29%;
+    top: 20px;
+    width: 100%;
+    font-size: 15pt;
+}
+.tbl {
+    width: 100%;
+}
+.tdGauche {
+    width: 30%;
+    text-align: right;
+}
+.tdDroite {
+    color: red;
+    font-weight: bold;
+}
+.maPresent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.maPresent h2 {
+    font-size: 20pt;
+    font-weight: bold;
+    color: red;
+}
+.monTexte {
+    border: 2px solid red;
+    border-radius: 20px;
+    box-shadow: #FFCCCC 4px 4px 4px;
+    width: 95%;
+    font-size: 14pt;
+    text-align: justify;
+    padding: 10px;
+}
+.col3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#btNext {
+    width: 100%;
+    margin-top: 20px;
+    text-align: right;
+    padding-right: 20px;
+}
+#btNext p {
+    color: red;
+}
+.btcanada:hover {
+    transform: scale(1.2) translateX(-10px);
+    transition: all 300ms ease;
+}
+/* Pied de page */
+footer {
+    display: flex;
+    text-align: center;
+    font-size: 8pt;
+    height: 30px;
+}
+.col1Bas, .col3Bas {
+    height: 30px;
+    width: 20%;
+    background-color: white;
+}
+.col2Bas {
+    color: red;
+    height: 30px;
+    width: 60%;
+}
