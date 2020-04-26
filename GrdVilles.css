@@ -1,0 +1,145 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+  *:focus {
+    outline: none;
+}
+body {
+    margin: 10;
+}
+/* Corps main */
+main {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: top;
+    margin-bottom: 10px;
+}
+#btPrev {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    padding-left: 10px;
+}
+.col1 {
+    width: 512px;
+    box-sizing: border-box;
+    margin-bottom: 6px;
+}
+#erable {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#erable:hover {
+    transform: scale(1.2) translate(5px, 5px);
+    transition: all 300ms ease;
+}
+.Ottawa {
+    text-align: left;
+}
+.Ottawa h3 {
+    text-align: center;
+}
+.Ottawa > a {
+    display: block;
+    position: relative;
+    left: 0;
+    top: -40px;
+}
+.Ottawa > img {
+    display: block;
+ /*   position: relative;
+    left: 0;
+    top: -30px;*/
+    border-radius: 20px;
+}
+.btcanada:hover {
+    transform: scale(1.2) translateX(10px);
+    transition: all 300ms ease;
+}
+.col2 {
+    width: calc(100% - 512px);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Box {
+    width: 32%;
+    margin: 3px;
+    border: 1px solid red;
+    border-radius: 10px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Box01, .Box04 {
+    visibility: hidden;
+}
+.Box02 {
+    background-image: url(./images/Villes/ColombieBritanique_Victoria.jpg);
+}
+.Box03 {
+    background-image: url(./images/Villes/Quebec_Quebec.jpg);
+}
+.Box05 {
+    background-image: url(./images/Villes/Alberta_Edmonton.jpg);
+}
+.Box06 {
+    background-image: url(./images/Villes/TerreNeuve_StJohns.jpeg);
+}
+.Box07 {
+    background-image: url(./images/Villes/Yukon-Whitehorse.jpg);
+}
+.Box08 {
+    background-image: url(./images/Villes/Saskatchewan_Regina.jpg);
+}
+.Box09 {
+    background-image: url(./images/Villes/NewBrunswick_Fredericton.jpg);
+}
+.Box10 {
+    background-image: url(./images/Villes/Ninavut_Iqaluit.jpg);
+}
+.Box11 {
+    background-image: url(./images/Villes/Manitoba_Winnipeg.jpg);
+}
+.Box12 {
+    background-image: url(./images/Villes/IleDuPrinceEdouard_charlottetown.jpg);
+}
+.Box13 {
+    background-image: url(./images/Villes/TerritoireNordOuest_YellowKnife.jpg);
+}
+.Box14 {
+    background-image: url(./images/Villes/Ontario_Toronto.jpg);
+}
+.Box15 {
+    background-image: url(./images/Villes/NouvelleEcosse_Halifax.png);
+}
+
+
+/* Pied de page */
+footer {
+    display: flex;
+    text-align: center;
+    font-size: 8pt;
+    height: 30px;
+}
+.col1Bas, .col3Bas {
+    height: 30px;
+    width: 20%;
+    text-align: left;
+    background-color: white;
+}
+.col2Bas {
+    color: red;
+    height: 30px;
+    width: 60%;
+}
