@@ -11,7 +11,84 @@ body {
     margin: 10;
 }
 /* Corps main */
-main {
+
+/* mode carrousel */
+.Mod3D {
+    min-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: top;
+    margin-bottom: 10px;
+}
+.carte {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+#carrousel {
+    height: 320px;
+    width: 100%;
+    border: lightgrey solid 3px;
+    border-style: outset;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+#anim {
+    width: 100%;
+    height: 296px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+#imgT {
+    height: 20px;
+    border-top: lightgrey outset 2px;
+}
+#imgT p {
+    text-align: center;
+    margin: 0;
+}
+#imgG {
+    width: 28%;
+    height: 290px;
+    background-image: url(./images/Villes/ColombieBritanique_Victoria.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /*
+    transform-origin: 0px 0px 0px;
+    transform: matrix3d(
+       1,   0, 0, 0,
+       0,   1, 0, 0,
+       0,   0, 1, 0,
+     100, 100, 0, 1); 
+    */
+
+}
+#imgD {
+    width: 28%;
+    height: 290px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./images/Villes/Alberta_Edmonton.jpg);
+}
+#imgC {
+    width: 40%;
+    height: 290px;
+    background-image: url(./images/Villes/IleDuPrinceEdouard_charlottetown.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* Mode grille */
+.ModGrille {
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -19,6 +96,8 @@ main {
     justify-content: center;
     align-items: top;
     margin-bottom: 10px;
+
+    display: none;
 }
 #btPrev {
     width: 100%;
@@ -74,41 +153,55 @@ main {
 .Box {
     width: 32%;
     margin: 3px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     border-radius: 10px;
     height: 150px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-left: 5px;
+    color: white;
+}
+.Box p {
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 .Box01, .Box04 {
     visibility: hidden;
 }
-.Box02 {
-    background-image: url(./images/Villes/ColombieBritanique_Victoria.jpg);
-}
+.Box02 {background-image: url(./images/Villes/ColombieBritanique_Victoria.jpg);}
 .Box03 {
-    background-image: url(./images/Villes/Quebec_Quebec.jpg);
-}
+    display: flex;
+    align-items: flex-end;
+    background-image: url(./images/Villes/Quebec_Quebec.jpg);}
 .Box05 {
-    background-image: url(./images/Villes/Alberta_Edmonton.jpg);
-}
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 5px;
+    background-image: url(./images/Villes/Alberta_Edmonton.jpg);}
 .Box06 {
-    background-image: url(./images/Villes/TerreNeuve_StJohns.jpeg);
-}
-.Box07 {
-    background-image: url(./images/Villes/Yukon-Whitehorse.jpg);
-}
+    background-image: url(./images/Villes/TerreNeuve_StJohns.jpeg);}
+.Box07 {background-image: url(./images/Villes/Yukon-Whitehorse.jpg);}
 .Box08 {
+    display: flex;
+    align-items: flex-end;
     background-image: url(./images/Villes/Saskatchewan_Regina.jpg);
 }
 .Box09 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 5px;
     background-image: url(./images/Villes/NewBrunswick_Fredericton.jpg);
 }
 .Box10 {
     background-image: url(./images/Villes/Ninavut_Iqaluit.jpg);
 }
 .Box11 {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5px;
     background-image: url(./images/Villes/Manitoba_Winnipeg.jpg);
 }
 .Box12 {

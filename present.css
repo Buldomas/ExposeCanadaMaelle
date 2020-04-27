@@ -60,13 +60,13 @@ h4 {
     margin: auto;
     width: 300px;
     border: 2px solid red;
-    border-radius: 30px;
+    border-radius: 15px;
     background-color: white;
     text-align: center;
 }
 .bt:hover, .bt a:hover {
-    border-color: rebeccapurple;
-    color: rebeccapurple;
+    color: white;
+    background-color: red;
     transform: scale(1.1);
     transition: all 0.3s ease;
 }

@@ -1,0 +1,134 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+  *:focus {
+    outline: none;
+}
+body {
+    margin: 0;
+    min-width: 646px;
+    min-height: 487px;
+}
+/* Corps main */
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: top;
+    margin-bottom: 10px;
+    min-height: 487px;
+    min-width: 646px;
+}
+#erable {
+    position: absolute;
+    left: 5px;
+}
+#erable:hover {
+    transform: scale(1.2) translate(5px, 5px);
+    transition: all 300ms ease;
+}
+.btcanada:hover {
+    transform: scale(1.2) translateX(10px);
+    transition: all 300ms ease;
+}
+.col2 {
+    height: auto;
+    width: auto;
+    text-align: left;
+    margin-left: 0;
+}
+.legende {
+    position: absolute;
+    width: 180px;
+    height: 175px;
+    top: 23px;
+    left: calc(646px - 180px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px black solid;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: white;
+}
+.znclimat {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    align-items: center;
+}
+.climat {
+    display: inline-block;
+    background-color: rosybrown;
+    border: 1px black solid;
+    height: 15px;
+    width: 30px;
+}
+.climat:hover {
+    cursor: pointer;
+}
+.txtlegende {
+    display: inline-block;
+    height: 15px;
+    text-align: left;
+    align-self: top;
+    font-size: 10px;
+    margin-left: 10px;
+}
+.txtlegende p {
+    margin: 0;
+}
+#Cl1 {background-color: white;}
+#Cl2 {background-color: #6FB883;}
+#Cl3 {background-color: #F6D35B;}
+#Cl4 {background-color: #ED6C5D;}
+#Cl5 {background-color: #A2564D;}
+#Cl6 {background-color: #85468A;}
+#Cl7 {background-color: #574BA0;}
+.txtinfo {
+    width: 50%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    color: red;
+    background-color: white;
+    top: -60px;
+    border: red 2px solid;
+    border-radius: 15px;
+}
+.txtinfo h3 {
+    margin: 5px;
+    font-size: 14px;
+}
+/* Pied de page */
+footer {
+    display: flex;
+    text-align: center;
+    font-size: 8pt;
+    height: 30px;
+}
+#btPrev {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    padding-left: 10px;
+}
+.col1Bas, .col3Bas {
+    height: 30px;
+    width: 20%;
+    text-align: left;
+    background-color: white;
+}
+.col2Bas {
+    color: red;
+    height: 30px;
+    width: 60%;
+}
