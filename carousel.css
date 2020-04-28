@@ -30,7 +30,7 @@
   }
   .carousel figure {
     margin: 0;
-    width: 400px;
+    width: 380px;
     height: auto;
     transform-style: preserve-3d;
     transition: transform 0.5s;
@@ -42,7 +42,7 @@
     height: 250px;
     box-sizing: border-box;
     padding: 0 20px;
-    opacity: 0.9;
+    /*opacity: 0.9;*/
     border: 10px solid white;
   }
   .carousel figure .znimg:not(:first-of-type) {
