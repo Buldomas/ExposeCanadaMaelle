@@ -94,6 +94,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
     margin: 10px 0 0;
   }
   .carousel nav button {
@@ -102,7 +103,13 @@
     cursor: pointer;
     color: #333;
     background: none;
-    border: 1px solid;
+    border: 1px solid grey;
     letter-spacing: 1px;
     padding: 5px 10px;
+  }
+  #nomville {
+    margin: 0;
+    color: grey;
+    font-weight: bolder;
+    font-size: 16pt;
   }
