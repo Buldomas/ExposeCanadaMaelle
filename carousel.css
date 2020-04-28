@@ -1,0 +1,108 @@
+.container {
+  margin: 0;
+  font-family: "Roboto";
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  justify-content: center;
+  width: 80%;
+  border: 2px solid lightgrey;
+  border-style: outset;
+  background-color: lightgrey;
+  padding: 0 5px;
+}
+.container h1 {
+  margin: 0;
+  text-align: center;
+  color: grey;
+}
+.carousel {
+    padding: 5px 20px 0 20px;
+    perspective: 500px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .carousel > * {
+    flex: 0 0 auto;
+  }
+  .carousel figure {
+    margin: 0;
+    width: 400px;
+    height: auto;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    transform-origin: 50% 50% -876.257px;
+  }
+  .carousel figure .znimg {
+    display: inline-block;
+    width: 100%;
+    height: 250px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    opacity: 0.9;
+    border: 10px solid white;
+  }
+  .carousel figure .znimg:not(:first-of-type) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform-origin: 50% 50% -876.257px;
+  }
+  .carousel figure .znimg:nth-child(2) {
+    transform: rotateY(0.4487989505rad);
+  }
+  .carousel figure .znimg:nth-child(3) {
+    transform: rotateY(0.897597901rad);
+  }
+  .carousel figure .znimg:nth-child(4) {
+    transform: rotateY(1.3463968515rad);
+  }
+  .carousel figure .znimg:nth-child(5) {
+    transform: rotateY(1.7951958021rad);
+  }
+  .carousel figure .znimg:nth-child(6) {
+    transform: rotateY(2.2439947526rad);
+  }
+  .carousel figure .znimg:nth-child(7) {
+    transform: rotateY(2.6927937031rad);
+  }
+  .carousel figure .znimg:nth-child(8) {
+    transform: rotateY(3.1415926536rad);
+  }
+  .carousel figure .znimg:nth-child(9) {
+    transform: rotateY(3.5903916041rad);
+  }
+  .carousel figure .znimg:nth-child(10) {
+    transform: rotateY(4.0391905546rad);
+  }
+  .carousel figure .znimg:nth-child(11) {
+    transform: rotateY(4.4879895051rad);
+  }
+  .carousel figure .znimg:nth-child(12) {
+    transform: rotateY(4.9367884556rad);
+  }
+  .carousel figure .znimg:nth-child(13) {
+    transform: rotateY(5.3855874062rad);
+  }
+  .carousel figure .znimg:nth-child(14) {
+    transform: rotateY(5.8343863567rad);
+  }
+  .carousel nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 10px 0 0;
+  }
+  .carousel nav button {
+    flex: 0 0 auto;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #333;
+    background: none;
+    border: 1px solid;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+  }

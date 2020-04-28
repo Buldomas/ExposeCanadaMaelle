@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./GrdVilles.css" />
+    <link rel="stylesheet" href="./carousel.css" />
     <title>Exposé Canada Maëlle : Grandes GrdVilles</title>
   </head>
   <body>
@@ -56,7 +57,7 @@
           <img
             class="imgCol1"
             src="./images/Political_map_of_Canada.png"
-            height="500px"
+            height="400px"
             alt=""
           />
           <a href="./index.html">
@@ -69,13 +70,30 @@
             />
           </a>
         </div>
-        <div id="carrousel">
-          <div id="anim">
-            <div id="imgG"></div>
-            <div id="imgC"></div>
-            <div id="imgD"></div>
-          </div>
-          <div id="imgT"><p>Nom de la région : Ville</p></div>
+        <div class="container">
+          <h1>Les Grandes Villes</h1>
+          <div class="carousel">
+            <figure>
+                <div class="znimg" id="img01"><p>A</p></div>
+                <div class="znimg" id="img02"><p>B</p></div>
+                <div class="znimg" id="img03"><p>C</p></div>
+                <div class="znimg" id="img04"><p>C</p></div>
+                <div class="znimg" id="img05"><p>C</p></div>
+                <div class="znimg" id="img06"><p>C</p></div>
+                <div class="znimg" id="img07"><p>C</p></div>
+                <div class="znimg" id="img08"><p>C</p></div>
+                <div class="znimg" id="img09"><p>C</p></div>
+                <div class="znimg" id="img10"><p>C</p></div>
+                <div class="znimg" id="img11"><p>C</p></div>
+                <div class="znimg" id="img12"><p>C</p></div>
+                <div class="znimg" id="img13"><p>C</p></div>
+                <div class="znimg" id="img14"><p>C</p></div>
+            </figure>
+            <nav>
+              <button class="nav prev">Prev</button>
+              <button class="nav next">Next</button>
+            </nav>
+                </div>
         </div>
       </div>
     </main>
@@ -96,5 +114,7 @@
       </div>
       <div class="col3Bas"></div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./carrousel.js"></script>
   </body>
 </html>

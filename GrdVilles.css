@@ -1,3 +1,4 @@
+
 html {
     box-sizing: border-box;
 }
@@ -20,7 +21,6 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: top;
     margin-bottom: 10px;
 }
 .carte {
@@ -28,65 +28,94 @@ body {
     text-align: center;
     margin: auto;
 }
-#carrousel {
-    height: 320px;
-    width: 100%;
-    border: lightgrey solid 3px;
-    border-style: outset;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-#anim {
-    width: 100%;
-    height: 296px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    transform-style: preserve-3d;
-}
-#imgT {
-    height: 20px;
-    border-top: lightgrey outset 2px;
-}
-#imgT p {
-    text-align: center;
-    margin: 0;
-}
-#imgG {
-    width: 28%;
-    height: 290px;
-    background-image: url(./images/Villes/ColombieBritanique_Victoria.jpg);
-    background-repeat: no-repeat;
+#img01 {
+    background-image: url( "./images/Villes/ColombieBritanique_Victoria.jpg");
     background-position: center;
     background-size: cover;
-    /*
-    transform-origin: 0px 0px 0px;
-    transform: matrix3d(
-       1,   0, 0, 0,
-       0,   1, 0, 0,
-       0,   0, 1, 0,
-     100, 100, 0, 1); 
-    */
+    background-repeat: no-repeat;
+}
+#img02 {
+    background-image: url("./images/Villes/IleDuPrinceEdouard_charlottetown.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#img03 {
+    background-image: url("./images/Villes/Manitoba_Winnipeg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#img04 {
+    background-image: url("./images/Villes/NewBrunswick_Fredericton.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#img05 {
+    background-image: url("./images/Villes/Ninavut_Iqaluit.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#img06 {
+    background-image: url("./images/Villes/NouvelleEcosse_Halifax.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#img07 {
+    background-image: url("./images/Villes/Ontario_Ottawa.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#img08 {
+    background-image: url("./images/Villes/Ontario_Toronto.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#img09 {
+    background-image: url("./images/Villes/Quebec_Quebec.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#img10 {
+    background-image: url("./images/Villes/Saskatchewan_Regina.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#img11 {
+    background-image: url("./images/Villes/TerreNeuve_StJohns.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#img12 {
+    background-image: url("./images/Villes/TerritoireNordOuest_YellowKnife.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#img13 {
+    background-image: url("./images/Villes/Yukon-Whitehorse.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#img14 {
+    background-image: url("./images/Villes/Alberta_Edmonton.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
-}
-#imgD {
-    width: 28%;
-    height: 290px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(./images/Villes/Alberta_Edmonton.jpg);
-}
-#imgC {
-    width: 40%;
-    height: 290px;
-    background-image: url(./images/Villes/IleDuPrinceEdouard_charlottetown.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
+/*--------------------------*/
+
+/*--------------------------*/
 /* Mode grille */
 .ModGrille {
     margin: auto;
