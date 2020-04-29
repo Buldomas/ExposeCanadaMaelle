@@ -232,9 +232,10 @@ footer {
     .texttete {width: 50%;}
     .descrip {font-size: 12pt;text-align: left;margin-top: 0;}
     .znarticle {width: 100%;}
+    .znarticle3 {width: 100%;}
     footer {height: 50px;}
     .btcanada {width: 60px;}
     .col3Bas {display: none;}
-    .col2Bas {width: 80%;}
+    .col2Bas {width: 80%;margin-right: 10px;}
     .col2Bas p {margin-top: 0;}
 }
