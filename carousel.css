@@ -113,3 +113,12 @@
     font-weight: bolder;
     font-size: 16pt;
   }
+  @media screen and (max-width: 500px) {
+    .carousel {padding: 5px 5px 0 5px;}
+    .carousel figure .znimg {height: 150px;}
+    .carousel nav {height: 50px;}
+    .carousel nav button {font-size: 8pt;padding: 2px;}
+    #nomville {font-size: 10pt;text-align: center;}
+    .container h1 {font-size: 14pt;}
+    .container {justify-content: start;height: 250px;}
+  }

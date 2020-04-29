@@ -140,3 +140,17 @@ footer {
     height: 30px;
     width: 60%;
 }
+@media screen and (max-width: 500px) {
+.col3 {justify-content: flex-start;}
+.btcanada {width: 60px;}
+#btNext {text-align: center;padding-right: 5px;}
+#btNext p {font-size: 10pt;}
+.enonce {font-size: 10pt;left:-39%}
+.tbl {width: 130%;}
+.maPresent h2 {margin-top:5px;}
+.monTexte {font-size: 11pt;box-shadow: none;}
+footer {height: 50px;}
+.col1Bas, .col3Bas {display: none;}
+.col2Bas {width: 100%; height: 50px;}
+.col2Bas p {margin-top: 8px;}
+}

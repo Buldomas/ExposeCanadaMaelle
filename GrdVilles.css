@@ -245,8 +245,6 @@ body {
 .Box15 {
     background-image: url(./images/Villes/NouvelleEcosse_Halifax.png);
 }
-
-
 /* Pied de page */
 footer {
     display: flex;
@@ -264,4 +262,13 @@ footer {
     color: red;
     height: 30px;
     width: 60%;
+}
+@media screen and (max-width: 500px) {
+    .Mod3D {min-width: auto;}
+    .Mod3D .imgCol1 {width: 100%;height: auto;}
+    footer {height: 50px;}
+    .btcanada {width: 60px;}
+    .col1Bas, .col2Bas, .col3Bas {height: 50px;}
+    .col3Bas {display: none;}
+    .col2Bas {width: 80%;}
 }
