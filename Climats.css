@@ -138,10 +138,17 @@ footer {
     .col2 img {width: 100%;}
     #erable {width: 60px;}
     .legende {
-        width: 165px;
-        height: 150px;
-        Left: 210px;
-        top: 5px;
+        position: static;
+        height: auto;
+        width: 100%;
+        left: 0;
+    }
+    .znclimat {
+        width: 45%;
+    }
+    .txtinfo {
+        top: -130px;
+        width: 80%;
     }
     .txtlegende {
         font-size: 7pt;
