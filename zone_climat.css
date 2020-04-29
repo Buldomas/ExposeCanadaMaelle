@@ -221,3 +221,20 @@ footer {
     height: 30px;
     width: 60%;
 }
+
+@media screen and (max-width: 500px) {
+    .col2Haut {
+        display: flex;
+        align-items: center;
+    }
+    .col2Haut h1 {font-size: 16pt;}
+    .imgtete {width: 50%;}
+    .texttete {width: 50%;}
+    .descrip {font-size: 12pt;text-align: left;margin-top: 0;}
+    .znarticle {width: 100%;}
+    footer {height: 50px;}
+    .btcanada {width: 60px;}
+    .col3Bas {display: none;}
+    .col2Bas {width: 80%;}
+    .col2Bas p {margin-top: 0;}
+}
