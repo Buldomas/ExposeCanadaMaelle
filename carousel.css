@@ -11,6 +11,7 @@
   border-style: outset;
   background-color: lightgrey;
   padding: 0 5px;
+  max-width: 900px;
 }
 .container h1 {
   margin: 0;
@@ -116,6 +117,8 @@
   @media screen and (max-width: 800px) {
     #nomville {font-size: 12pt;}
     .carousel nav button {font-size: 10pt;padding: 2px;}
+    .Mod3d {min-width: auto;}
+    #nomville {font-size: 10pt;text-align: center;}
   }
   @media screen and (max-width: 500px) {
     .carousel {padding: 5px 5px 0 5px;}

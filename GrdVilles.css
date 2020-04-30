@@ -350,6 +350,7 @@ footer {
     #bthaut {display: inline;}
 }
 @media screen and (max-width: 800px) {
+    .Mod3D {min-width: auto;}
     .Box01 {display: none;}
     .Box04 {display: none;}
     .ModGrille {
