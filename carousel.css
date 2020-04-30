@@ -105,13 +105,17 @@
     background: none;
     border: 1px solid grey;
     letter-spacing: 1px;
-    padding: 5px 10px;
+    padding: 5px 5px;
   }
   #nomville {
     margin: 0;
     color: grey;
     font-weight: bolder;
     font-size: 16pt;
+  }
+  @media screen and (max-width: 800px) {
+    #nomville {font-size: 12pt;}
+    .carousel nav button {font-size: 10pt;padding: 2px;}
   }
   @media screen and (max-width: 500px) {
     .carousel {padding: 5px 5px 0 5px;}

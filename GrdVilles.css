@@ -22,6 +22,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 10px;
+    /*display: none;*/
 }
 .carte {
     width: 100%;
@@ -122,9 +123,10 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: left;
     align-items: top;
     margin-bottom: 10px;
+    width: 100%;
 
     display: none;
 }
@@ -135,7 +137,8 @@ body {
     padding-left: 10px;
 }
 .col1 {
-    width: 512px;
+    /*width: 512px;*/
+    width: 50%;
     box-sizing: border-box;
     margin-bottom: 6px;
 }
@@ -148,31 +151,95 @@ body {
     transform: scale(1.2) translate(5px, 5px);
     transition: all 300ms ease;
 }
+#bthaut {
+    position: absolute;
+    top: 15px;
+    left: 35px;
+    display: none;
+}
+/*----*/
+.btSwitch {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 50px;
+    background: white;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    width: 140px;
+}
+.btSwitch p {
+    margin-right: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 10pt;
+    text-align: right;
+}
+.switch-wrap {
+    cursor: pointer;
+    background: lightgrey;
+    padding: 7px;
+    width: 50px;
+    height: 30px;
+    border-radius: 33.5px;
+  }
+  .switch-wrap input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .switch {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 0fr 1fr 1fr;
+    transition: 0.2s;
+  }
+  .switch::after {
+    content: "";
+    border-radius: 50%;
+    background: grey;
+    grid-column: 2;
+    transition: all 0.2s;
+  }
+  
+  input:checked + .switch {
+    grid-template-columns: 1fr 1fr 0fr;
+  }
+  input:checked + .switch::after {
+    background-color: grey;
+  }
+  /*---*/
+.zncarte {
+    width: 100%;
+    display: block;
+}
+.zncarte img {
+    max-width: 100%;
+    max-height: 100%;
+}
 .Ottawa {
     text-align: left;
+    width: 100%;
+    display: block;
 }
 .Ottawa h3 {
     text-align: center;
 }
-.Ottawa > a {
+.Ottawa a img {
     display: block;
-    position: relative;
-    left: 0;
-    top: -40px;
-}
-.Ottawa > img {
-    display: block;
- /*   position: relative;
-    left: 0;
-    top: -30px;*/
     border-radius: 20px;
+    max-width: 100%;
+    max-height: 100%;
 }
 .btcanada:hover {
     transform: scale(1.2) translateX(10px);
     transition: all 300ms ease;
 }
 .col2 {
-    width: calc(100% - 512px);
+    /*width: calc(100% - 512px);*/
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -184,7 +251,7 @@ body {
     margin: 3px;
     /*border: 1px solid red;*/
     border-radius: 10px;
-    height: 150px;
+    min-height: 150px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -195,8 +262,17 @@ body {
     margin-top: 2px;
     margin-bottom: 2px;
 }
-.Box01, .Box04 {
-    visibility: hidden;
+.Box01 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+}
+ .Box04 {
+     display: flex;
+     justify-content: center;
+     align-items: flex-end;
+    color: black;
 }
 .Box02 {background-image: url(./images/Villes/ColombieBritanique_Victoria.jpg);}
 .Box03 {
@@ -263,7 +339,7 @@ footer {
     height: 30px;
     width: 60%;
 }
-@media screen and (max-width: 500px) {
+}@media screen and (max-width: 500px) {
     .Mod3D {min-width: auto;}
     .Mod3D .imgCol1 {width: 100%;height: auto;}
     footer {height: 50px;}
@@ -271,4 +347,20 @@ footer {
     .col1Bas, .col2Bas, .col3Bas {height: 50px;}
     .col3Bas {display: none;}
     .col2Bas {width: 80%;}
+    #bthaut {display: inline;}
 }
+@media screen and (max-width: 800px) {
+    .Box01 {display: none;}
+    .Box04 {display: none;}
+    .ModGrille {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .col1, .col2 {
+        width: 100%;
+    }
+}    
+@media screen and (max-width: 1000px) {
+    .Box01 {display: none;}
+    .Box04 {display: none;}
+}    

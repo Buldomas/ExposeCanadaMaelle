@@ -1,4 +1,6 @@
 var
+	btswitch = document.getElementById('btCheck'),
+	btswitch2 = document.getElementById('btCheck2'),
 	carousel = document.querySelector('.carousel'),
 	figure = carousel.querySelector('figure'),
 	nav = carousel.querySelector('nav'),
@@ -44,9 +46,29 @@ function onClick(e) {
 			currPoss = 13;
 		}
 	}
+	/* nom sous les images */
 	var position = document.getElementById("nomville");
 	var pville = nameVille[currPoss]
 	position.textContent = pville;
 
 	figure.style.transform = `rotateY(${currImage * -theta}rad)`;
 }
+/* Bouton bascule Grille / animé */
+btswitch.addEventListener('click',function () {
+	var affgrid = document.getElementById("ModGrille");
+	var aff3d = document.getElementById("Mod3D");
+	if (btswitch.checked == true) {
+		affgrid.style.display = "flex";
+		aff3d.style.display = "none";
+		btswitch2.checked = true
+	}
+});
+btswitch2.addEventListener('click',function () {
+	var affgrid = document.getElementById("ModGrille");
+	var aff3d = document.getElementById("Mod3D");
+	if (btswitch2.checked == false) {
+		affgrid.style.display = "none";
+		aff3d.style.display = "flex";
+		btswitch.checked = false
+	}
+});
